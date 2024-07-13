@@ -4,4 +4,4 @@ Diabetes is a chronic health condition that affects millions of people worldwide
 
 The chosen dataset contains medical and demographic data of patients along with their diabetes status, whether positive or negative. It consists of various features such as age, gender, body mass index (BMI), hypertension, heart disease, smoking history, HbA1c level, and blood glucose level.
 
-The primary objective of this project is to develop a robust predictive model capable of accurately determining whether a patient has diabetes based on their medical and demographic data.
+The primary objective of this project is to develop a robust Bayesian predictive model capable of accurately determining whether a patient has diabetes based on their medical and demographic data.
