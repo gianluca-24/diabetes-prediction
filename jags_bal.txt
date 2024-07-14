@@ -1,9 +1,0 @@
-model {  beta0 ~ dnorm(0, 0.5)  beta_gender ~ dnorm(0, 0.1)  beta_age ~ dnorm(0, 0.2)    beta_hypertension ~ dnorm(0, 0.1)    beta_heart_disease ~ dnorm(0, 0.1)   beta_smoking_history ~ dnorm(0, 0.1)    beta_bmi ~ dnorm(0, 0.2)   beta_HbA1c ~ dnorm(0,0.4)   beta_blood ~ dnorm(0, 0.1)    for (i in 1:N) {    logit_p[i] <- beta0 + 
-		  beta_gender * x[i,1] + 
-		  beta_age * x[i,2] + 
-		  beta_hypertension * x[i,3] + 
-		  beta_heart_disease * x[i,4] + 
-		  beta_smoking_history * x[i,5] + 
-		  beta_bmi * x[i,6] + 
-		  beta_HbA1c * x[i,7] + 
-		  beta_blood * x[i,8]    p[i] <- 1 / (1 + exp(-logit_p[i]))     y[i] ~ dbern(p[i])  }}
